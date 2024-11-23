@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVA3 MakeUp</title>
-    <link rel="stylesheet" href="assets/css/estilo1.css">
-    <script type="module" src="/assets/js/script.js"></script>
-    <script type="module" src="/assets/js/firebase.js"></script>
+    <title>EVA3</title>
+    <script type="module" src="assets/js/firebase.js"></script>
+    <script src="assets/js/script.js" type="module"></script>
 </head>
 <body id="idBody" class="modo-claro">
     <!-- Header del titulo de la pagina -->
@@ -44,26 +43,26 @@
             <img>
             <p>Estos son algunos de los maquillajes mas populares de la web</p>
         </section>
+    </main>
 
         <!-- FORMULARIO  de contacto con inputs, text area,select, checkbox y botones -->
         <div id="formulario">
             <h2>FORMULARIO</h2>
             <form>
                 <label for="nombre">Nombre*</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-                <p class="noDisplay" id="pnombre">Ingrese su nombre</p>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"><br>
+
 
                 <label for="apellido">Apellido*</label>
-                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
-                <p class="noDisplay" id="papellido">Ingrese su apellido</p>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"><br>
+
 
                 <label for="correo">Correo*</label>
-                <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo" required>
-                <p class="noDisplay" id="pcorreo">Debe ingresar un correo</p>
+                <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo"><br>
 
                 <label for="fecha">Fecha de nacimiento</label>
-                <input type="date" name="fecha" id="fecha">
-                <p class="noDisplay" id="pfecha">Debe ingresar su fecha de nacimiento</p>
+                <input type="date" name="fecha" id="fecha"><br>
+
 
                 <label for="genero">Género</label>
                 <select name="genero" id="genero">
@@ -71,8 +70,7 @@
                     <option>Masculino</option>
                     <option>Femenino</option>
                     <option>No especifica</option>
-                </select>
-                <p class="noDisplay" id="pgenero">Debes seleccionar un genero</p>
+                </select><br>
 
                 <label for="favorito">Maquillaje favorito</label>
                 <select name="favorito" id="favorito">
@@ -80,22 +78,20 @@
                     <option>Tinta de labios</option>
                     <option>Sombras de ojos</option>
                     <option>Otro</option>
-                </select>
-                <p class="noDisplay" id="pfavorito">Debe seleccionar un maquillaje que sea su favorito</p>
+                </select><br>
 
                 <label for="areatexto">Opinión</label>
-                <textarea name="areatexto" id="areatexto" placeholder="Escriba una opnión sobre sus productos de maquillaje asiatico favoritos"></textarea>
-                <p class="noDisplay" id="pareatexto">Debe entregar una opinión  sobre de sus podructos favoritos.</p>
+                <textarea name="areatexto" id="areatexto" placeholder="Escriba una opnión sobre sus productos de maquillaje asiatico favoritos"></textarea><br>
 
                 <div id="div-termino"> 
                 <label for="terminos">Acepta terminos y condiciones*</label>
                 <input type="checkbox" name="terminos" id="terminos">
-                </div>
+                </div><br>
 
                 <button id="btnEnviar">Enviar</button>
             </form>
         </div>
-
+<!-- TABLA 
         <table class="tabla">
             <thead>
                 <tr>
@@ -110,8 +106,11 @@
                 </tr>
             </thead>
             <tbody id="tbDatos"></tbody>
+            <button type="button" id="botonEliminar">Eliminar</button>
+            <button type="button" id="botonActualizar">Actualizar></button>
         </table>
-
+    -->
+<!-- FORMULARIO ACTUALIZAR 
         <div class="formulario2">
             <h2>Actualizar Datos</h2>
             <form>
@@ -161,7 +160,7 @@
                 <button type="button" id="btnActulizar">Actualizar</button>
             </form>
         </div>
-    </main>
+-->
 
     <footer id="idFooter">
         <p>© Todos los derechos reservados</p>
